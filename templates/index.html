@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Sumbit Database</title></head>
-    <body>
-        <h2>Sumbit Form</h2>
+<head>
+    <title>To Do Page</title>
+</head>
+<body>
 
-        {% if error %}
-            <p style="color:red;"><strong>ERROR:</strong> {{ error }}</p>
-        {% endif %}
+<h2>To Do Form</h2>
 
-        <form method="post" action="/">
-            <label>Name: <input type="text" name="name" required></label><br><br>
-            <label>Email: <input type="email" name="email" required></label><br><br>
-            <label>Message: <textarea name="message" required></textarea></label><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </body>
+<form>
+
+<label>Item Name</label><br>
+<input type="text"><br><br>
+
+<label>Item Description</label><br>
+<textarea></textarea><br><br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</body>
 </html>
