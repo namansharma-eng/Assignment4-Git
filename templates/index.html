@@ -5,19 +5,26 @@
 </head>
 <body>
 
-<h2>To Do Form</h2>
+    <h2>To Do Form</h2>
 
-<form>
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
 
-<label>Item Name</label><br>
-<input type="text"><br><br>
+    <form method="POST">
 
-<label>Item Description</label><br>
-<textarea></textarea><br><br>
+        <label>Name</label><br>
+        <input type="text" name="name" required><br><br>
 
-<button type="submit">Submit</button>
+        <label>Email</label><br>
+        <input type="email" name="email" required><br><br>
 
-</form>
+        <label>Message</label><br>
+        <textarea name="message" rows="5" cols="30" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
 
 </body>
 </html>
