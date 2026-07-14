@@ -1,5 +1,5 @@
-[
-    {"id": 1, "name": "Naman", "role": "Developer"},
-    {"id": 2, "name": "Rohit", "role": "Intern"},
-    {"id": 3, "name": "Sita", "role": "Team Lead"}
-]
+{
+    "name":"Naman Sharma",
+    "assignment":"Git Assignment 4",
+    "status":"Completed"
+}
